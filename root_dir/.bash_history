@@ -380,3 +380,13 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 ros2 launch scout_gazebo scout_simu.launch.py 
 tmux
+ros2 launch scout_gazebo start_world.launch.py
+ros2 launch scout_gazebo scout_simu.launch.py
+apt-get install ros-humble-robot-localization
+ros2 launch scout_gazebo scout_simu.launch.py
+cd ros2_ws/ && colcon build --symlink-install
+ros2 launch scout_gazebo start_world.launch.py
+bash
+ros2 launch scout_gazebo scout_simu.launch.py
+apt-get install ros-humble-robot-localization
+ros2 launch scout_gazebo scout_simu.launch.py

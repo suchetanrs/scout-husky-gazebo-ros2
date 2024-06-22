@@ -7,6 +7,7 @@ apt update --fix-missing
 apt-get install ros-humble-rqt ros-humble-rqt-common-plugins -y
 apt-get install ros-humble-gazebo-ros-pkgs -y
 apt-get install ros-humble-rviz2 -y
+apt-get install ros-humble-robot-localization -y
 
 #rosdep
 rosdep init
