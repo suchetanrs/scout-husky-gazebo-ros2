@@ -13,4 +13,4 @@ apt-get install tmux -y
 apt-get install mlocate -y
 apt-get install vim -y
 apt-get install ranger -y
-rm -rf /var/lib/apt/lists/*
+apt-get install xterm -y

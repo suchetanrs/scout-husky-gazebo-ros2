@@ -168,7 +168,7 @@ def generate_launch_description():
         robot_namespace_arg,
         robot_x_arg,
         robot_y_arg,
-        # start_world,
+        start_world,
         spawn_scout,
 
         start_navsat_transform_cmd,

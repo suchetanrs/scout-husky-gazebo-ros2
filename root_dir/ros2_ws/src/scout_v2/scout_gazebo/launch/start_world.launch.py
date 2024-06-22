@@ -23,15 +23,16 @@ def generate_launch_description():
             os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py'),
         ),
         # launch_arguments={'gui': 'false', 'gui_required':'false'}.items()
-        launch_arguments={'verbose':'true'}.items()
+        launch_arguments={'verbose':'false'}.items()
     )
 
     return LaunchDescription([
         DeclareLaunchArgument(
           'world',
-          default_value=[os.path.join(pkg_box_car_gazebo, 'worlds', 'marsyard2020.world'), ''],
+          default_value=[os.path.join(pkg_box_car_gazebo, 'worlds', 'clearpath_playpen.world'), ''],
           description='SDF world file'),
         gazebo
         # marsyard2020
         # clearpath_playpen
+        # inspection
     ])

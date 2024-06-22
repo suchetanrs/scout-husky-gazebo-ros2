@@ -2,6 +2,7 @@ version: "3"
 services:
   scout_gazebo_sim:
     image: scout_husky_gazebo_docker:latest
+    container_name: scout_husky_gazebo_container
     volumes:
       #full dev
       - /dev:/dev:rw

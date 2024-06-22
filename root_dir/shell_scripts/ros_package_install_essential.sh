@@ -7,7 +7,6 @@ apt update --fix-missing
 apt-get install ros-humble-rqt ros-humble-rqt-common-plugins -y
 apt-get install ros-humble-gazebo-ros-pkgs -y
 apt-get install ros-humble-rviz2 -y
-apt-get install xterm -y
 
 #rosdep
 rosdep init
@@ -18,4 +17,3 @@ echo '151.101.84.133 raw.githubusercontent.com' | tee -a /etc/hosts
 cat /etc/hosts
 rosdep init
 rosdep update
-rm -rf /var/lib/apt/lists/*

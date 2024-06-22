@@ -16,3 +16,7 @@ The namespace of the robot is currently set to ```scout_2```. There is a bug in 
 2. Edit the ```scout_control.yaml``` in the ```scout_description``` package by replacing ```scout_2``` with your namespace in the wheel names.
 
 The ```ROS_DOMAIN_ID``` is set to 55 in the ```.bashrc```
+
+![MarsYard](media/marsyard_scout.png)
+![Clearpath](media/clearpath_scout.png)
+![Inspection](media/inspection_scout.png)

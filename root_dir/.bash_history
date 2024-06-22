@@ -192,3 +192,34 @@ sudo chmod +x *
 ls
 cd ..
 ls
+cd ros2_ws/
+cd ros2_ws/ && colcon build --symlink-install
+cd
+cd ros2_ws/ && colcon build --symlink-install
+source ~/.bashrc
+echo 3
+echo 4
+source ~/.bashrc
+ls
+ros2 launch scout_gazebo scout_simu.launch.py 
+ros2 launch scout_gazebo start_world.launch.py
+ros2 launch scout_gazebo scout_simu.launch.py
+tmux
+nano shell_scripts/launch_simulation.sh
+sudo chmod +x shell_scripts/launch_simulation.sh 
+./shell_scripts/launch_simulation.sh 
+nano ~/.bash_profile
+./shell_scripts/launch_simulation.sh 
+rm -rf .bash_profile 
+ls
+cd shell_scripts/
+ls
+rm -rf launch_simulation.sh 
+ls
+nano launch_simulation.sh
+cd
+sudo chmod +x shell_scripts/*
+./shell_scripts/launch_simulation.sh 
+cd ros2_ws/ && colcon build --symlink-install
+source ~/.bashrc
+ros2 launch scout_gazebo start_world.launch.py

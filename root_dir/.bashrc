@@ -108,8 +108,8 @@ source /opt/ros/humble/setup.bash
 export TURTLEBOT3_MODEL=waffle
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/root/ros2_ws/src/scout_v2/scout_gazebo/models
 export SCOUT_NAMESPACE=scout_2
-export SCOUT_X=1.0
-export SCOUT_Y=1.0
+export SCOUT_X=2.0
+export SCOUT_Y=2.0
 export ROS_DOMAIN_ID=55
 export RCUTILS_COLORIZED_OUTPUT=1
 cd
