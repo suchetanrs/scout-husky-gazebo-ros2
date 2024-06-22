@@ -11,9 +11,7 @@ Run ```cd <cloned_repo>```
 8. You should be able to teleop the robot through the teleop window.
 
 # Important information
-The namespace of the robot is currently set to ```scout_2```. There is a bug in the differential_drive_controller of ros2_control due to which direct change of namespaces is not possible. If you desire to use a diffferent namespace, do the following
-1. ```export SCOUT_NAMESPACE=<your_namespace>```
-2. Edit the ```scout_control.yaml``` in the ```scout_description``` package by replacing ```scout_2``` with your namespace in the wheel names.
+The namespace of the robot is currently set to ```scout_2```. There is a bug in the differential_drive_controller of ros2_control due to which direct change of namespaces is not possible. Hence it is built from source as a temporary fix to this issue.
 
 The ```ROS_DOMAIN_ID``` is set to 55 in the ```.bashrc```
 
