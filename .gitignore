@@ -1,0 +1,12 @@
+**.vscode**
+*.csv
+root_dir/.cache
+root_dir/.gazebo
+root_dir/.ignition
+root_dir/.ros
+root_dir/.sdformat
+root_dir/ros2_ws/build
+root_dir/ros2_ws/install
+root_dir/ros2_ws/log
+root_dir/.local
+**__pycache__**
