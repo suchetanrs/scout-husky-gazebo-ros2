@@ -23,7 +23,6 @@ def generate_launch_description():
             os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py'),
         ),
         # launch_arguments={'gui': 'false', 'gui_required':'false'}.items()
-        launch_arguments={'verbose':'false'}.items()
     )
 
     return LaunchDescription([
@@ -34,5 +33,4 @@ def generate_launch_description():
         gazebo
         # marsyard2020
         # clearpath_playpen
-        # inspection
     ])

@@ -1,7 +1,7 @@
 /**:
   controller_manager:
     ros__parameters:
-      update_rate: 30
+      update_rate: 10
 
       joint_state_broadcaster:
         type: joint_state_broadcaster/JointStateBroadcaster
@@ -11,11 +11,9 @@
 
   diff_drive_controller:
     ros__parameters:
-      # left_wheel_names: ['front_left_wheel', 'rear_left_wheel']
-      # right_wheel_names: ['front_right_wheel', 'rear_right_wheel']
+      left_wheel_names: ['front_left_wheel', 'rear_left_wheel']
+      right_wheel_names: ['front_right_wheel', 'rear_right_wheel']
 
-      left_wheel_names: ['scout_2/front_left_wheel', 'scout_2/rear_left_wheel']
-      right_wheel_names: ['scout_2/front_right_wheel', 'scout_2/rear_right_wheel']
       wheel_separation: 0.498
       wheels_per_side: 1
       wheel_radius: 0.1645

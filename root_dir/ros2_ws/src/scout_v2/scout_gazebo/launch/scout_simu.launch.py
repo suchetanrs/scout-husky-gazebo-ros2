@@ -56,6 +56,13 @@ def generate_launch_description():
         )
     )
 
+    # Rviz
+    rviz_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(pkg_scout_gazebo, 'launch', 'rviz_launch.py'),
+        )
+    )
+
     # Spawn robot
     spawn_scout = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -170,6 +177,7 @@ def generate_launch_description():
         robot_y_arg,
         start_world,
         spawn_scout,
+        rviz_launch,
 
         start_navsat_transform_cmd,
         opaque_function,

@@ -62,6 +62,8 @@
                     <!-- <P_cx>0</P_cx> -->
                     <!-- Projection matrix principal point cy-->
                     <P_cy>380.5</P_cy>
+                    <Cx>320.5</Cx>
+                    <Cy>240.5</Cy>
                     <!-- Projection matrix focal length fy-->
                     <!-- <P_fy>0</P_fy> -->
                     <!-- Projection matrix translation Tx, Ty between stereo cameras-->

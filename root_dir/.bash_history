@@ -223,3 +223,160 @@ sudo chmod +x shell_scripts/*
 cd ros2_ws/ && colcon build --symlink-install
 source ~/.bashrc
 ros2 launch scout_gazebo start_world.launch.py
+cd ros2_ws/ && colcon build --symlink-install
+source ~/.bashrc
+ros2 launch scout_gazebo start_world.launch.py
+ros2 launch scout_gazebo scout_simu.launch.py
+ls
+cd ros2_ws/
+ls
+cd src/
+ls
+cd scout_v2/
+ls
+cd scout_ros2/scout_description/config/scout_control.yaml 
+nano scout_ros2/scout_description/config/scout_control.yaml 
+cd
+ros2 launch scout_gazebo scout_simu.launch.py
+ros2 pkg prefix scout_navigation2 
+ros2 launch scout_gazebo scout_simu.launch.py
+ros2 pkg prefix robot_localization 
+ros2 launch scout_gazebo scout_simu.launch.py
+ls
+cd ros2_ws/
+ls
+cd ros2_ws/ && colcon build --symlink-install
+colcon build --symlink-install
+source install/setup.bash
+ros2 launch scout_gazebo scout_simu.launch.py
+bash
+ros2 launch scout_gazebo rviz_launch.py 
+ros2 launch scout_gazebo start_world.launch.py 
+kill -9 %
+ros2 launch scout_gazebo start_world.launch.py 
+kill -9 %1
+ros2 launch scout_gazebo start_world.launch.py 
+bash
+bash
+ros2 launch scout_gazebo scout_simu.launch.py 
+ls
+rm -rf ros2_control
+ls
+mv ros2_controllers/ ros2_ws/src/
+ls
+cd ros2_ws/
+s
+ls
+cd src/
+ls
+cd ros2_controllers/
+ls
+rm -rf gripper_controllers/ bicycle_steering_controller/ ackermann_steering_controller/
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf build/ install/ log/
+colcon build --symlink-install
+source install/setup.bash
+ros2 launch scout_gazebo start_world.launch.py 
+ros2 launch scout_gazebo scout_simu.launch.py 
+ros2 launch scout_description rv
+ros2 launch scout_gazebo rviz_launch.py 
+ros2 launch scout_gazebo scout_simu.launch.py 
+ros2 launch scout_gazebo sc
+ros2 launch scout_gazebo scout_simu.launch.py 
+ls
+cd ros2_
+cd ros2_ws/
+ls
+cd src/
+ls
+mv ros2_controllers/ ../../
+ls
+cd ..
+rm -rf build/ install/ log/
+colcon build --symlink-install
+bash
+ros2 launch scout_gazebo scout_simu.launch.py 
+l
+ls
+cd ros2_ws/
+ls
+cd src/
+ls
+cd ../..
+nautilus .
+cd ros2_ws/src/
+ls
+cd rm -rf ros2_control_demos/
+ls
+rm -rf ros2_control_demos/
+ls
+mv ros2_control ../../
+ls
+cd ..
+ls
+rm -rf build/ install/ log/
+colcon build --symlink-install
+ros2 pkg prefix controller_manager
+cd
+bash
+ros2 launch scout_gazebo scout_simu.launch.py 
+nano root/ros2_ws/install/scout_description/share/scout_description/config/scout_control.yaml
+cd root/ros2_ws/install/scout_description/share/scout_description/
+cd root/ros2_ws/install/scout_description/
+ros2 launch scout_gazebo scout_simu.launch.py 
+cd ros2_ws/
+ls
+cd src/
+ls
+rm -rf robot_localization/
+ls
+ros2 pkg prefix robot_localization 
+cd ..
+rm -rf build/ install/ log/
+colcon build --symlink-install
+ros2 pkg prefix robot_localization 
+bash
+bash
+rviz2
+bash
+ls
+cd ros2_ws/
+ls
+mv robot_localization/ ros2_control* scout_v2/ src/
+ls
+cd src/
+ls
+rm -rf robot_localization/
+ls
+cd ..
+mv robot_localization/ ros2_control* scout_v2/ src/
+ls
+rm -rf build/ install/ log/
+colcon build --symlink-install
+ls
+cd src/
+ls
+cd scout_v2/
+ls
+cd scout_ros2/
+ls
+rm -rf scout_control/
+cd ../../..
+colcon build --symlink-install
+ls
+cd src/ros2_controllers/
+ls
+rm -rf tricycle_*
+ls
+cd ..
+ls
+cd ..
+colcon build --symlink-install
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+ros2 launch scout_gazebo scout_simu.launch.py 
+tmux

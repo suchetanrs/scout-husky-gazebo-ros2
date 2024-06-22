@@ -15,8 +15,6 @@ from launch.substitutions import FindExecutable, PathJoinSubstitution, TextSubst
 from launch.substitutions import LaunchConfiguration, Command
 from launch_ros.actions import Node
 from launch.actions import OpaqueFunction, SetLaunchConfiguration
-from launch.actions import RegisterEventHandler
-from launch.event_handlers import OnProcessExit
 
 def generate_launch_description():
 
@@ -62,21 +60,7 @@ def generate_launch_description():
                     arguments=["diff_drive_controller"],
                 )
 
-        delayed_diff_drive_spawner = RegisterEventHandler(
-            event_handler=OnProcessExit(
-                target_action=spawn_entity,
-                on_exit=[drive_control_node],
-            )
-        )
-
-        delayed_joint_state_spawner = RegisterEventHandler(
-            event_handler=OnProcessExit(
-                target_action=spawn_entity,
-                on_exit=[joint_state_broadcaster_node],
-            )
-        )
-
-        return [spawn_robot_world, spawn_entity, delayed_joint_state_spawner, delayed_diff_drive_spawner]
+        return [spawn_robot_world, spawn_entity, joint_state_broadcaster_node, drive_control_node]
     
     opaque_function = OpaqueFunction(function=launch_nodes)
 
