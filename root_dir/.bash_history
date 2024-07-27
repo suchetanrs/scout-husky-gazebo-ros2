@@ -390,3 +390,14 @@ bash
 ros2 launch scout_gazebo scout_simu.launch.py
 apt-get install ros-humble-robot-localization
 ros2 launch scout_gazebo scout_simu.launch.py
+echo $SCOUT_NAMESPACE 
+git status
+ls
+clear
+ros2 launch scout_gazebo scout_simu.launch.py 
+clear
+git status
+bash
+ros2 topic list
+bash
+tmux
