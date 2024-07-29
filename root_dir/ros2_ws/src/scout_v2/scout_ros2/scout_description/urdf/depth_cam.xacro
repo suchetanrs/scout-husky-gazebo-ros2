@@ -73,9 +73,9 @@
                     <max_depth>2.4</max_depth> -->
                     <ros>
                         <namespace>${robot_namespace}</namespace>
-                        <!-- <remapping>/${robot_namespace}/camera/image_raw:=/${robot_namespace}/rgb/image</remapping>
-                        <remapping>/${robot_namespace}/camera/camera_info:=/${robot_namespace}/rgb/camera_info</remapping>
-                        <remapping>/${robot_namespace}/camera/depth/image_raw:=/${robot_namespace}/depth/image</remapping> -->
+                        <remapping>/${robot_namespace}/camera/image_raw:=/${robot_namespace}/rgb_camera</remapping>
+                        <remapping>/${robot_namespace}/camera/camera_info:=/${robot_namespace}/camera_info</remapping>
+                        <remapping>/${robot_namespace}/camera/depth/image_raw:=/${robot_namespace}/depth_camera</remapping>
                     </ros>
                 </plugin>
             </sensor>
